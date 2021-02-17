@@ -1,0 +1,88 @@
+@charset "UTF8";
+
+body{
+    background-image: url("hatter.jpg");
+    color: white;
+}
+
+main, header, nav, article, aside, footer{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header{
+    flex:0 0 100%;
+    order: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+
+nav>ul{
+    display: flex;
+}
+
+ul>li{
+    display: block;
+    padding: 5px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color:darkkhaki;
+}
+
+aside{
+    flex: 0 0 25%;
+}
+aside>p{
+    text-align: justify;
+}
+
+#bal{
+    order: 1;
+}
+
+#jobb{
+    order: 3;
+}
+
+article{
+    flex: 0 0 50%;
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+article>div{
+    flex: 0 0 33%;
+}
+
+article>div>img{
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+footer{
+    flex: 0 0 100%;
+    order: 4;
+}
